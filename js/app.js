@@ -179,10 +179,9 @@ async function submitToEndpoint(data) {
   }
 
   const response = await fetch(BOOKING_ENDPOINT, {
-    method: "POST",
-    headers: { "Content-Type": "application/json", "Accept": "application/json" },
-    body: JSON.stringify(data)
-  });
+  method: "POST",
+  body: JSON.stringify(payload),
+});
 
   if (!response.ok) {
     const detail = await response.text().catch(() => "");
