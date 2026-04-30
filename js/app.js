@@ -4,7 +4,7 @@ const BUSINESS_PHONE = "+14695678930";
 // Example: https://n8n.yourdomain.com/webhook/eh-bin-booking
 // IMPORTANT: Use /webhook/ only after the n8n workflow is active. Use /webhook-test/ only while testing.
 // Do NOT put a private NocoDB API token directly in browser JavaScript.
-const BOOKING_ENDPOINT = "https://n8n.labscamover9.com.com/webhook/eh-bin-booking";
+const BOOKING_ENDPOINT = "https://n8n.labscamover9.com/webhook/eh-bin-booking";
 
 const SITE_CONFIG = {
   nocodbTableName: "EH Bin Leads",
