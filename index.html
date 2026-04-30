@@ -27,10 +27,8 @@
       </nav>
 
       <div class="header-actions">
-        <div class="language-toggle" aria-label="Language toggle">
-          <button type="button" data-set-lang="en">EN</button>
-          <button type="button" data-set-lang="es">ES</button>
-        </div>
+        <button class="control-button" id="languageButton" type="button" aria-haspopup="dialog">🌐 <span data-i18n="common.language">Language</span></button>
+        <button class="control-button" id="themeButton" type="button" aria-pressed="false">🌙 <span data-i18n="common.darkMode">Dark</span></button>
         <a class="call-pill" href="tel:+14695678930">☎ <span>(469) 567-8930</span></a>
         <button class="menu-button" id="menuButton" type="button" aria-controls="mainNav" aria-expanded="false">☰</button>
       </div>
@@ -196,6 +194,7 @@
         <button type="button" data-choose-lang="en"><span>🇺🇸</span> English</button>
         <button type="button" data-choose-lang="es"><span>🇲🇽</span> Español</button>
       </div>
+      <button type="button" class="modal-close" id="closeLanguageModal" data-i18n="common.close">Close</button>
     </div>
   </div>
 
