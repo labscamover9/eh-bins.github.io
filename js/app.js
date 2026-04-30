@@ -180,7 +180,7 @@ async function submitToEndpoint(data) {
 
   const response = await fetch(BOOKING_ENDPOINT, {
   method: "POST",
-  body: JSON.stringify(payload),
+  body: JSON.stringify(data),
 });
 
   if (!response.ok) {
