@@ -135,16 +135,17 @@
           </div>
           <label><span data-i18n="contact.address">Address</span><input name="address" required autocomplete="street-address" /></label>
           <div class="form-grid two-cols">
-            <label><span data-i18n="contact.plan">Plan</span><select name="plan" id="planSelect"></select></label>
-            <label><span data-i18n="contact.bins">Number of bins</span><select name="bins"><option>1</option><option>2</option><option>3</option><option>4+</option></select></label>
+            <label><span data-i18n="contact.serviceType">Service type</span><select name="serviceType" id="serviceTypeSelect"></select></label>
+            <label><span data-i18n="contact.bins">Number of bins</span><select name="bins"><option>1</option><option>2</option><option>3</option><option>4</option></select></label>
           </div>
           <div class="form-grid two-cols">
-            <label><span data-i18n="contact.day">Preferred day</span><input name="day" type="date" /></label>
-            <label><span data-i18n="contact.time">Preferred time</span><select name="time"><option>Morning</option><option>Afternoon</option><option>Evening</option><option>Anytime</option></select></label>
+            <label><span data-i18n="contact.day">Preferred day</span><select name="preferredDay" id="preferredDaySelect"></select></label>
+            <label><span data-i18n="contact.schedulePattern">Schedule pattern</span><select name="schedulePattern" id="schedulePatternSelect"></select></label>
           </div>
+          <label><span data-i18n="contact.time">Preferred time</span><select name="time" id="timeSelect"></select></label>
           <label><span data-i18n="contact.notes">Notes</span><textarea name="notes" rows="3"></textarea></label>
-          <button class="button primary full" type="submit" data-i18n="contact.send">Send request by text</button>
-          <p class="form-note" data-i18n="contact.formHelp">This opens a prefilled text message. To collect requests automatically, add a Formspree, Airtable, Supabase, or CRM endpoint in js/app.js.</p>
+          <button class="button primary full" type="submit" data-i18n="contact.send">Send booking request</button>
+          <p class="form-note" data-i18n="contact.formHelp">This form sends your booking request securely through our n8n workflow into our booking system.</p>
           <div class="success hidden" id="bookingSuccess" data-i18n="contact.sentText">Request saved. Send the text message to finish booking.</div>
         </form>
       </div>
