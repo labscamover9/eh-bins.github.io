@@ -4,7 +4,7 @@ const BUSINESS_PHONE = "+14695678930";
 // Example Formspree endpoint: https://formspree.io/f/xxxxxxx
 // Recommended self-host path: point this to an n8n webhook, Cloudflare Worker, or other small proxy.
 // Do NOT put a private NocoDB API token directly in browser JavaScript.
-const BOOKING_ENDPOINT = "";
+const BOOKING_ENDPOINT = "https://n8n.labscamover9.com.com/webhook/85f1994d-4fcc-4a02-9592-7b12c071c100";
 
 const SITE_CONFIG = {
   nocodbTableName: "EH Bin Leads",
